@@ -1,0 +1,109 @@
+body,
+html {
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background: rgba(
+    0,
+    0,
+    0,
+    0.7
+  ); /* Semi-transparent background for the navbar */
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+.logo {
+  color: white;
+  font-size: 1.5rem;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-left: 1.5rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #ddd;
+}
+
+.hero {
+  background-image: url("ASSETS/banner-jelajahi.webp"); /* Replace with your image URL */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  position: relative;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Dark overlay for better text visibility */
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  font-size: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  .nav-links {
+    flex-direction: column;
+  }
+
+  .nav-links li {
+    margin: 0.5rem 0;
+  }
+}
