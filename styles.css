@@ -1,109 +1,137 @@
-body,
-html {
-  height: 100%;
-  font-family: Arial, sans-serif;
-}
-
 header {
   width: 100%;
   position: absolute;
   top: 0;
   left: 0;
   z-index: 100;
-  background: rgba(
-    0,
-    0,
-    0,
-    0.7
-  ); /* Semi-transparent background for the navbar */
 }
 
 nav {
   display: flex;
+  flex-direction: row;
+  background-color: #312d2d30;
+  height: 80px;
+  padding-left: 40px;
+  padding-right: 40px;
   justify-content: space-between;
-  align-items: center;
-  padding: 1rem 2rem;
-}
-
-.logo {
-  color: white;
-  font-size: 1.5rem;
-}
-
-.nav-links {
-  list-style: none;
-  display: flex;
-}
-
-.nav-links li {
-  margin-left: 1.5rem;
-}
-
-.nav-links a {
-  text-decoration: none;
-  color: white;
-  font-size: 1rem;
-  transition: color 0.3s;
-}
-
-.nav-links a:hover {
-  color: #ddd;
-}
-
-.hero {
-  background-image: url("ASSETS/banner-jelajahi.webp"); /* Replace with your image URL */
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 100vh;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  text-align: center;
   position: relative;
 }
 
-.hero::after {
-  content: "";
+.logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.logo > img {
+  height: 50px;
+}
+
+.logo > p {
+  padding-left: 16px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  color: white;
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.nav-links > li {
+  list-style: none;
+  padding: 24px;
+
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.nav-links > li > a {
+  text-decoration: none;
+  color: white;
+}
+
+.hero {
+  width: 100vh;
+  height: 100vh; /* Full viewport height */
+  overflow: hidden;
+}
+
+.hero-bg {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.5); /* Dark overlay for better text visibility */
-}
-
-.hero-content {
-  position: relative;
+  object-fit: cover; /* Ensures the image covers the container */
   z-index: 1;
-  padding: 20px;
+  overflow: hidden;
 }
 
-h1 {
-  font-size: 3rem;
-  margin-bottom: 0.5rem;
+.text-elements {
+  position: absolute;
+  z-index: 2;
+  color: white;
+  transform: translate(-50%, 100%); /* Centers the text elements */
+  text-align: center;
+  top: 53%;
+  left: 50%;
+  opacity: 0;
+  animation: revealUp 1s ease-out forwards 1s;
 }
 
-p {
+@keyframes revealUp {
+  to {
+    opacity: 1;
+    transform: translate(-50%, -50%); /* Centers the text elements */
+    top: 53%;
+    left: 50%;
+  }
+}
+
+.text-elements h1 {
+  font-size: 7rem;
+  margin: 8px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.text-elements p {
   font-size: 1.5rem;
+  margin: 16px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
 }
 
-@media (max-width: 768px) {
-  h1 {
-    font-size: 2rem;
-  }
+.hero-fg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the image covers the container */
+  z-index: 3;
+  overflow: hidden;
+}
 
-  p {
-    font-size: 1rem;
-  }
+.tentang-desa {
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+}
 
-  .nav-links {
-    flex-direction: column;
-  }
+.map > img {
+  width: 100vh;
+  height: 100vh;
+  object-fit: cover;
+}
 
-  .nav-links li {
-    margin: 0.5rem 0;
-  }
+.about {
+  margin: 80px;
 }
