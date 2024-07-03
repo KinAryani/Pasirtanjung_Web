@@ -135,3 +135,136 @@ nav {
 .about {
   margin: 80px;
 }
+
+.about > h1 {
+  color: #355640;
+  font-size: 3.5rem;
+  margin: 0px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.about > p {
+  color: #355640;
+  margin-top: 32px;
+  font-size: 14px;
+  font-family: "Lora", serif;
+  line-height: 20px;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.about > button {
+  background-color: #355640;
+  border-style: none;
+  border-radius: 32px;
+  padding: 16px 32px;
+  margin-top: 32px;
+  float: right;
+
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  color: white;
+}
+
+.about > button:hover {
+  background-color: #dd8823;
+}
+
+/*WISATA SECTION---------------------------------*/
+.wisata {
+  width: 100vh;
+  height: 110vh; /* Full viewport height */
+  overflow: hidden;
+}
+
+.wisata > img {
+  width: 100%;
+  height: 350px;
+  position: absolute;
+}
+
+.wisata-container {
+  z-index: 7;
+  margin: 66px;
+  position: absolute;
+  align-content: center;
+  padding-left: 80px;
+  padding-right: 80px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap: 80px;
+}
+
+.produk > img {
+  width: 400px;
+  height: auto;
+}
+
+.produk > h2 {
+  color: #355640;
+  font-size: 2rem;
+  margin: 16px;
+  margin: 0px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.produk > p {
+  color: #355640;
+  margin-top: 8px;
+  font-size: 14px;
+  font-family: "Lora", serif;
+  line-height: 20px;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.karian > img {
+  width: 400px;
+  height: auto;
+}
+
+.karian > h2 {
+  color: #355640;
+  font-size: 2rem;
+  margin: 16px;
+  margin: 0px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.karian > p {
+  color: #355640;
+  margin-top: 8px;
+  font-size: 14px;
+  font-family: "Lora", serif;
+  line-height: 20px;
+  font-weight: 200;
+  font-style: normal;
+}
+
+/*BANNER*/
+
+.wisata-swiper {
+  width: 100%;
+  height: 90vh; /* Full viewport height */
+  overflow: hidden;
+}
+
+.wisata-swiper > img {
+  object-fit: cover;
+  width: 100%;
+}
+
+.kegiatan-masyarakat {
+  width: 100%;
+  height: 100vh; /* Full viewport height */
+  overflow: hidden;
+}
