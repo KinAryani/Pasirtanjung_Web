@@ -1,0 +1,320 @@
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+    /* NAVBAR */
+
+nav {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    height: 80px;
+    padding-left: 40px;
+    padding-right: 40px;
+    justify-content: space-between;
+    position: relative;
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.logo > img {
+    height: 50px;
+}
+
+.logo > p {
+    padding-left: 16px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: #355640;
+}
+
+.logo > h4 {
+    padding-right: 16px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: #355640;
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.nav-links > li {
+    list-style: none;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.nav-links > li > a {
+    text-decoration: none;
+    color: #355640;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    padding: 8px 16px;
+    border-radius: 4px;
+}
+
+.nav-links > li > a:hover {
+    background-color: slategray;
+    color: white;
+}
+
+/* ABON */
+
+.abon-cardbase {
+    display: flex;
+    width: calc(100% - 100px); /* Full width minus 70px margin on both sides */
+    max-width: 1400px;
+    margin: 0 auto;
+    margin-top: 140px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    border-style: inset;
+    border-width: 0.5px;
+    border-color: #355640;
+    overflow: hidden;
+    position: relative;
+}
+
+.abon-info {
+    width: 60%;
+    color: #355640;
+    text-align: left;
+    font-family: "Poppins", sans-serif;
+    justify-content: center;
+    margin: 24px;
+    margin-left: 40px;
+}
+
+.abon-info img {
+    margin-top: 32px;
+}
+
+.abon-img {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 24px;
+}
+
+.abon-img img {
+    width: 80%;
+    height: auto;
+    object-fit: contain;
+}
+
+.abon-info p {
+    font-size: 1rem;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    font-family: "Lora", sans-serif;
+    font-weight: 400;
+}
+
+.abon-info h2 {
+    font-size: 2.2rem;
+    margin-top: 20px;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.abon-info button {
+    margin-top: 14px;
+    margin-bottom: 32px;
+    position: inherit;
+    display: inline-block;
+}
+
+.abon-info > button {
+    background-color: #355640;
+    border-style: none;
+    border-radius: 32px;
+    padding: 16px 32px;
+    margin-top: 40px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: white;
+}
+
+.abon-info > button > chat {
+    background-color: #fff;
+    border-style: solid;
+    border-color: #355640;
+    border-width: 2px;
+    border-radius: 32px;
+    padding: 16px 32px;
+    margin-top: 40px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: #355640;
+}
+
+.abon-info > button:hover {
+    background-color: #dd8823;
+}
+
+/* KRUPUK */
+
+.krupuk-cardbase {
+    display: flex;
+    width: calc(100% - 100px); /* Full width minus 70px margin on both sides */
+    max-width: 1400px;
+    margin: 0 auto;
+    margin-top: 90px;
+    margin-bottom: 100px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    border-style: inset;
+    border-width: 0.5px;
+    border-color: #355640;
+    overflow: hidden;
+    position: relative;
+}
+
+.krupuk-info {
+    width: 60%;
+    color: #355640;
+    text-align: left;
+    font-family: "Poppins", sans-serif;
+    justify-content: center;
+    margin: 24px;
+    margin-left: 40px;
+}
+
+.krupuk-info img {
+    margin-top: 32px;
+}
+
+.krupuk-img {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 24px;
+}
+
+.krupuk-img img {
+    width: 80%;
+    height: auto;
+    object-fit: contain;
+}
+
+.krupuk-info p {
+    font-size: 1rem;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    font-family: "Lora", sans-serif;
+    font-weight: 400;
+}
+
+.krupuk-info h2 {
+    font-size: 2.2rem;
+    margin-top: 20px;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.krupuk-info button {
+    margin-top: 14px;
+    margin-bottom: 32px;
+    position: inherit;
+    display: inline-block;
+}
+
+.krupuk-info > button {
+    background-color: #355640;
+    border-style: none;
+    border-radius: 32px;
+    padding: 16px 32px;
+    margin-top: 40px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: white;
+}
+
+.krupuk-info > button > chat {
+    background-color: #fff;
+    border-style: solid;
+    border-color: #355640;
+    border-width: 2px;
+    border-radius: 32px;
+    padding: 16px 32px;
+    margin-top: 40px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: #355640;
+}
+
+.krupuk-info > button:hover {
+    background-color: #dd8823;
+}
+
+/* FOOTER */
+
+footer {
+    display: flex;
+    flex-direction: row;
+    max-height: 200px;
+    margin-top: 2px;
+    width: 100%;
+    background-color: #adbea2;
+    justify-content: space-around;
+    padding: 20px;
+    overflow: hidden;
+    align-items: center;
+}
+
+.logo-desa img {
+    max-height: 100px;
+    padding: 16px;
+}
+
+footer h2 {
+    font-size: 2rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color: #355640;
+    margin-bottom: 10px;
+}
+
+footer p {
+    font-size: 1rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #355640;
+}

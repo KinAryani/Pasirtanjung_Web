@@ -1,0 +1,213 @@
+nav {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    background-color: #312d2d30;
+    height: 80px;
+    width: 100%;
+    top: 0;
+    justify-content: space-between;
+    align-content: center;
+    overflow: hidden;
+}
+
+.kembali {
+    margin-top: 24px;
+}
+
+.kembali > a {
+    margin-left: 8px;
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: white;
+    float: right;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    padding: 8px 16px;
+    border-radius: 4px;
+}
+
+.kembali > a:hover {
+    background-color: slategray;
+    color: white;
+}
+
+.pasirtanjung > img {
+    height: 50px;
+}
+
+.pasirtanjung {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: white;
+    float: right;
+    padding-right: 40px;
+}
+
+.page-title {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: white;
+    float: right;
+    margin-top: 30px;
+    margin-left: 56px;
+}
+
+header {
+    background-image: url(bg-header-karian.png);
+    height: 60vh;
+    width: auto;
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-size: cover; /* Ensures the image covers the entire element */
+    overflow: hidden;
+    top: 0;
+}
+
+header > h3 {
+    font-size: 1rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: white;
+    text-align: center;
+    padding-top: 88px;
+    margin-bottom: 8px;
+}
+
+header > h1 {
+    font-size: 4.5rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: white;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 24px;
+}
+
+header > p {
+    font-size: 0.8rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    text-align: center;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+  /*CONTENT SECTIONNNNN------------*/
+
+.karian-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    padding: 40px;
+    gap: 80px;
+    width: 90%;
+    max-width: 1200px;
+}
+
+.sarana {
+    background-color: white;
+    color: #355640;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    text-align: left;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.sarana:hover {
+    transform: translateY(-10px);
+}
+
+.sarana-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.icon {
+    height: 24px;
+    margin-bottom: 10px;
+}
+
+.sarana h2 {
+    margin-top: 0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.sarana p {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15px;
+    margin-bottom: 24px;
+}
+
+.coming-soon {
+    background-color: white;
+    color: #355640;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 60px;
+}
+
+.coming-soon h2 {
+    margin-top: 40px;
+}
+
+/* FOOTER */
+
+footer {
+    display: flex;
+    flex-direction: row;
+    max-height: 200px;
+    margin-top: 2px;
+    width: 100%;
+    background-color: #adbea2;
+    justify-content: space-around;
+    padding: 20px;
+    overflow: hidden;
+    align-items: center;
+}
+
+.logo-desa img {
+    max-height: 100px;
+    padding: 16px;
+}
+
+footer h2 {
+    font-size: 2rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color: #355640;
+    margin-bottom: 10px;
+}
+
+footer p {
+    font-size: 1rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #355640;
+}
